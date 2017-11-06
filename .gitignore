@@ -1,0 +1,11 @@
+__pycache__
+.idea
+*.pyc
+*.egg-info
+.cache/
+coverage-html-report
+dist/
+.coverage
+*.swp
+.tox
+venv

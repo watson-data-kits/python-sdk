@@ -1,0 +1,10 @@
+[run]
+branch = True
+source = knowledge_kits
+
+[report]
+show_missing = True
+fail_under = 90
+
+[html]
+directory = coverage-html-report
