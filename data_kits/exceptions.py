@@ -2,5 +2,5 @@ class InvalidApiKey(Exception):
     pass
 
 
-class KnowledgeKitsException(Exception):
+class DataKitsException(Exception):
     pass

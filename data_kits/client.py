@@ -3,7 +3,7 @@ import time
 
 import requests
 
-from .exceptions import InvalidApiKey, KnowledgeKitsException
+from .exceptions import InvalidApiKey, DataKitsException
 
 
 class Client(object):
@@ -63,7 +63,7 @@ class Client(object):
                 data = r.json()
                 if 'error' in data:
                     error_msg = data['error']
-                    raise KnowledgeKitsException(error_msg)
+                    raise DataKitsException(error_msg)
             except json.JSONDecodeError:
                 # Raise the uncaught exception
                 r.raise_for_status()

@@ -1,23 +1,23 @@
-# Watson Knowledge Kits
+# Watson Data Kits
 
-Python library for Watson Knowledge Kits (insert link here).
+Python library for Watson Data Kits (insert link here).
 
 ## Installation
 Python 3.6 is required.
 
 Install with either `pip` or `easy_install`:
 
-`pip install knowledge_kits`
+`pip install watson_data_kits`
 
 or
 
-`easy_install knowledge_kits`
+`easy_install watson_data_kits`
 
 ## Usage
 
 Each kit has its own class with endpoints implemented as methods of the class. Here we use the `TravelKit` as an example:
 ```
-from knowledge_kits import TravelKit
+from data_kits import TravelKit
 
 
 kit = TravelKit(api_key='YOUR_API_KEY', api_url='API_URL', instance_id='INSTANCE_ID')

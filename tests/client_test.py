@@ -4,8 +4,8 @@ import time
 from unittest.mock import patch
 
 import pytest
-from knowledge_kits.client import Client
-from knowledge_kits.exceptions import InvalidApiKey, KnowledgeKitsException
+from data_kits.client import Client
+from data_kits.exceptions import InvalidApiKey, DataKitsException
 
 
 class TestClient(object):
@@ -74,7 +74,7 @@ class TestClient(object):
         self.client.TOKEN_INFO = {'token': 'token', 'expires': time.time() + 10}
         setattr(patched_request.return_value, 'json', lambda: test_res)
         setattr(patched_request.return_value, 'status_code', 400)
-        with pytest.raises(KnowledgeKitsException) as e:
+        with pytest.raises(DataKitsException) as e:
             self.client.request('endpoint', **params)
             patched_request.assert_called_with(
                 '%s/endpoint' % self.client.base,
@@ -105,7 +105,7 @@ class TestClient(object):
         )
         assert patched_request.raise_for_status.called_with()
 
-    @patch('knowledge_kits.client.Client._fetch_token')
+    @patch('data_kits.client.Client._fetch_token')
     @patch('requests.get')
     def test_request_invalid_token(self, patched_request, token_patch):
         test_res = {'data': 'data'}

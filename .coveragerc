@@ -1,6 +1,6 @@
 [run]
 branch = True
-source = knowledge_kits
+source = data_kits
 
 [report]
 show_missing = True
