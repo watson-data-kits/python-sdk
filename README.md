@@ -1,6 +1,7 @@
 # Watson Data Kits
 
-Python library for Watson Data Kits (insert link here).
+Python library for [Watson Data
+Kits](https://console.bluemix.net/docs/services/knowledge-kits/index.html).
 
 ## Installation
 Python 3.6 is required.
