@@ -1,7 +1,7 @@
 # Watson Data Kits
 
 Python library for [Watson Data
-Kits](https://console.bluemix.net/docs/services/knowledge-kits/index.html).
+Kits](https://console.bluemix.net/docs/services/watson-data-kits/index.html).
 
 ## Installation
 Python 3.6 is required.
@@ -32,6 +32,8 @@ params = {
 data = kit.attractions(**params)
 print(data)
 ```
+
+See the [API reference](https://console.bluemix.net/apidocs/1787-watson-data-kits-travel#introduction) for available endpoints.
 
 ## Development
 
