@@ -16,9 +16,9 @@ or
 
 ## Usage
 
-Each kit has its own class with endpoints implemented as methods of the class. Here we use the `TravelKit` as an example:
+Each kit has its own class with endpoints implemented as methods of the class. Query parameters should be passed as keyword arguments. Here we use the `TravelKit` as an example:
 ```
-from data_kits import TravelKit
+from watson_data_kits import TravelKit
 
 
 kit = TravelKit(api_key='YOUR_API_KEY', api_url='API_URL', instance_id='INSTANCE_ID')

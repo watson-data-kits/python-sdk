@@ -4,8 +4,8 @@ import time
 from unittest.mock import patch
 
 import pytest
-from data_kits.client import Client
-from data_kits.exceptions import InvalidApiKey, DataKitsException
+from watson_data_kits.client import Client
+from watson_data_kits.exceptions import InvalidApiKey, DataKitsException
 
 
 class TestClient(object):
@@ -105,7 +105,7 @@ class TestClient(object):
         )
         assert patched_request.raise_for_status.called_with()
 
-    @patch('data_kits.client.Client._fetch_token')
+    @patch('watson_data_kits.client.Client._fetch_token')
     @patch('requests.get')
     def test_request_invalid_token(self, patched_request, token_patch):
         test_res = {'data': 'data'}

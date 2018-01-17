@@ -1,6 +1,6 @@
 [run]
 branch = True
-source = data_kits
+source = watson_data_kits
 
 [report]
 show_missing = True
