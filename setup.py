@@ -1,4 +1,12 @@
 from setuptools import setup
+import sys
+
+
+REQUIRED_PYTHON = (3, 6)
+if sys.version_info[:2] < REQUIRED_PYTHON:
+    sys.stderr.write('Python >={} is required.'.format(REQUIRED_PYTHON))
+    sys.exit(1)
+
 
 setup(name='watson_data_kits',
       version='1.1',
@@ -11,5 +19,5 @@ setup(name='watson_data_kits',
       install_requires=[
           'requests>=2.18.4,<2.19.0'
       ],
-      python_requires='~=3.3',
+      python_requires='>=3.6',
       zip_safe=False)
