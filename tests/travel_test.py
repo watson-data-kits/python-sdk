@@ -20,7 +20,25 @@ class TestTravelKit(object):
         patched_request.assert_called_with('categories', **params)
 
     @patch('watson_data_kits.client.Client.request')
+    def test_concepts(self, patched_request):
+        params = {'radius_miles': 50}
+        self.kit.concepts(**params)
+        patched_request.assert_called_with('concepts', **params)
+
+    @patch('watson_data_kits.client.Client.request')
     def test_countries(self, patched_request):
         params = {'name': 'Fiji'}
         self.kit.countries(**params)
         patched_request.assert_called_with('countries', **params)
+
+    @patch('watson_data_kits.client.Client.request')
+    def test_entities(self, patched_request):
+        params = {'radius_miles': 50}
+        self.kit.entities(**params)
+        patched_request.assert_called_with('entities', **params)
+
+    @patch('watson_data_kits.client.Client.request')
+    def test_keywords(self, patched_request):
+        params = {'radius_miles': 50}
+        self.kit.keywords(**params)
+        patched_request.assert_called_with('keywords', **params)

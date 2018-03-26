@@ -18,7 +18,8 @@ setup(name='watson_data_kits',
       license='Apache License, Version 2.0',
       packages=['watson_data_kits'],
       install_requires=[
-          'requests>=2.18.4,<2.19.0'
+          'requests>=2.18.4'
       ],
+      include_package_data=True,
       python_requires='>=3.6',
       zip_safe=False)

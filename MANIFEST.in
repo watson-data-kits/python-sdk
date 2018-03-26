@@ -1,0 +1,5 @@
+include README.rst
+include LICENSE
+include CONTRIBUTING.md
+recursive-include watson_data_kits *.py
+recursive-include tests *.py
