@@ -8,9 +8,8 @@ if sys.version_info[:2] < REQUIRED_PYTHON:
     sys.exit(1)
 
 
-version = __import__('watson_data_kits').__version__
 setup(name='watson_data_kits',
-      version=version,
+      version='1.2.0',
       description='Python wrapper for Watson Data Kits',
       url='https://github.com/watson-data-kits/python-sdk',
       author='Joe Meissler',
