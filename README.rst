@@ -37,7 +37,7 @@ Each kit has its own class with endpoints implemented as methods of the class. Q
     data = kit.attractions(**params)
     print(data)
 
-See the `API reference <https://console.bluemix.net/apidocs/1787-watson-data-kits-travel#introduction>`_ for available endpoints.
+See the `API reference <https://console.bluemix.net/apidocs/2519-watson-data-kit-for-travel-poi?&language=python#introduction>`_ for available endpoints.
 
 Development
 -----------
